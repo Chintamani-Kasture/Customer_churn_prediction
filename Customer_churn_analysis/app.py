@@ -69,7 +69,7 @@ def predict():
     inputQuery18 = request.form['query18']
     inputQuery19 = request.form['query19']
 
-    model = pickle.load(open("model.sav", "rb"))
+    model = pickle.load(open("RDForest_model", "rb"))
     #model = pickle.load(open("RDForest_model.sav", "rb"))
     
     data = [[inputQuery1, inputQuery2, inputQuery3, inputQuery4, inputQuery5, inputQuery6, inputQuery7, 
